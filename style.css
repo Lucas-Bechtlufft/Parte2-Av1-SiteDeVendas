@@ -1,20 +1,73 @@
 html, body{
-  background-color: #003300;
+  background-color: #FFFFFF;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*BANNER*//*BANNER*//*BANNER*/
+.wrapper{
+  position: fixed;
+  width: 100%;
+  padding: 0px 100px;
+  display: grid;
+  top: 0;
+  align-items: center;
+  gap: 40px;
+  grid-template-columns: auto auto 1fr auto;
+  background-color: #BFDBF7;
+  }
+  .wrapper > div {  
+    padding: 1em;
+  }
+  #titulo{
+    text-align: center;
+  }
+
 #divBusca{
+  display: flex;
   background-color:white;
   border:solid 1px;
   border-radius:15px;
-  width:300px;
+  padding: 6px;
+  width:360px;
+  justify-content: space-between;
 }
-
 #txtBusca{
+  flex-grow: 1;
   float:left;
   background-color:transparent;
   padding-left:5px;
   font-style:italic;
   font-size:18px;
   border:none;
-  height:25px;
-  width:260px;
+  height:15px;
+}
+#imagens{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+/*CONTEUDO*//*CONTEUDO*//*CONTEUDO*/
+main{
+  margin-top: 110px;
+  background-color: white;
+  display: flex;
+  }
+li{
+  list-style: none;
+}
+#Produtos{
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+#Produtos ul{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
 }
