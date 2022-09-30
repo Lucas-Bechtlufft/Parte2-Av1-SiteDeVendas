@@ -1,16 +1,15 @@
 html, body{
-  background-color: #FFFFFF;
+  background-color: white;
 }
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 /*BANNER*//*BANNER*//*BANNER*/
 .wrapper{
   position: fixed;
   width: 100%;
-  padding: 0px 100px;
   display: grid;
   top: 0;
   align-items: center;
@@ -53,8 +52,7 @@ html, body{
 }
 /*CONTEUDO*//*CONTEUDO*//*CONTEUDO*/
 main{
-  margin-top: 110px;
-  background-color: white;
+  margin-top: 105px;
   display: flex;
   }
 li{
@@ -79,52 +77,22 @@ div ul button:hover {
   color: black;
 }
 /*CATALOGO*//*CATALOGO*//*CATALOGO*/
-section .catalog {
-  width: 100vw;
-  padding: 100px;
+h2{
+  border-bottom: #1A3580 2px solid;
 }
-
-section .filter-card {
-  width: 1280px;
-  height: 150px;
-  background: grey;
-  border-radius: 8px;
-  margin: 0 auto;
+.promocao{
+ margin-left: 150px; 
+}
+.catalogo{
+  margin-left: 140px;
+  
+}
+.Titulo-Catalogo {
+  margin-top: 110px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
-.search-input {
-  width: 700px;
-  height: 50px;
-  border: none;
-  border-radius: 4px 0px 0px 4px;
-  text-indent: 10px;
-}
-
-.search-button {
-  width: 150px;
-  height: 50px;
-  border-radius: 0px 4px 4px 0px;
-  border: none;
-  background:blue;
-  color: white;
-  cursor: pointer;
-  font-size: 1.1em;
-  transition: 0.2s ease;
-}
-
-.search-button:hover {
-  background: #dedede;
-  color: var(--blue);
-}
-
-.title-wrapper-catalog {
-  margin-top: 200px;
-  padding-bottom: 20px;
-}
-section .card-wrapper {
+.baralho {
   max-width: 1000px;
   height: 100%;
   display: grid;
@@ -132,4 +100,106 @@ section .card-wrapper {
   grid-gap: 30px;
   padding-top: 50px;
 }
-
+  .carta {
+  height: 400px;
+  background:white;
+  border: groove black 1px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.carta-conteudo{
+  background-color: rgb(250, 250, 250);
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.carta img {
+  width: 65%;
+}
+.favoritos{
+  width: 10% !important;
+ margin-left: 275px;
+ margin-bottom: 25px;
+}
+.carta p{
+  font-family:'Poppins';font-style:normal;
+  color: black;
+  align-items: center;
+  text-align: -webkit-center;
+}
+.carta button {
+  width: 90%;
+  padding: 15px 0px;
+  border: none;
+  background:#A6D9F7;
+  border-radius: 4px;
+  color: #1A3580;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+}
+.carta button:hover {
+  background: #dedede;
+  color: black;
+}
+/*SOBRE*//*SOBRE*//*SOBRE*/
+.sobre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px;
+}
+/*RECURSO*//*RECURSO*//*RECURSO*/
+.Recurso{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background:#E6E6EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+  .baralho-titulo-conteudo{
+    padding: 20px 0px;
+  }
+  .carta-recurso-bloco{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 30px;
+  }
+  .carta-recurso-item{
+    max-width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dedede3b;
+    border-radius: 4px;
+  }
+  .carta-recurso-texto{
+  max-width: 60%;
+  margin: 5px;
+  }
+  .carta-recurso-item img{
+    width: 64px;
+    height: 64px;
+  }
