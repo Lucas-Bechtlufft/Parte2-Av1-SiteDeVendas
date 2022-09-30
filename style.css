@@ -81,12 +81,9 @@ h2{
   border-bottom: #1A3580 2px solid;
 }
 .promocao{
- margin-left: 150px; 
+ margin-left: 250px; 
 }
-.catalogo{
-  margin-left: 140px;
   
-}
 .Titulo-Catalogo {
   margin-top: 110px;
   display: flex;
@@ -96,7 +93,8 @@ h2{
   max-width: 1000px;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  margin-left: 45px;
+  grid-template-columns: auto auto auto;
   grid-gap: 30px;
   padding-top: 50px;
 }
@@ -117,6 +115,9 @@ h2{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.preco{
+  font-size: large;
 }
 .carta img {
   width: 65%;
@@ -149,41 +150,44 @@ h2{
   background: #dedede;
   color: black;
 }
-/*SOBRE*//*SOBRE*//*SOBRE*/
-.sobre {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 10px;
-}
 /*RECURSO*//*RECURSO*//*RECURSO*/
 .Recurso{
     width: 100%;
     height: 100%;
-    margin-top: 50px;
     background:#E6E6EA;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px;
+    margin-top: 25px;
+  }
+  .baralho-recurso{
+    text-align: -webkit-center;
+
   }
   .baralho-titulo-conteudo{
     padding: 20px 0px;
   }
+  .baralho-titulo-conteudo > p{
+    font-size: 20px;
+  }
+  .baralho-titulo-conteudo > a{
+    color: darkslateblue;
+    font-size: 35px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
   .carta-recurso-bloco{
     max-width: 1000px;
-    min-width: 300px;
-    height: 600px;
+    height: 450px;
+    width: 600px;
     background: white;
     margin: 0 auto;
     border-radius: 8px;
-    z-index: 10;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    display: flex;
     grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
   .carta-recurso-item{
     max-width: 420px;
@@ -192,14 +196,84 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid #dedede3b;
+    border: 1px solid black;
     border-radius: 4px;
   }
-  .carta-recurso-texto{
-  max-width: 60%;
-  margin: 5px;
+
+
+  .botao-recurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 14px;
+    color: #fff;
+    background: navy;
+    background-origin: border-box;
+    user-select: none;
+  }
+  .botao-recurso:hover{
+    background-color:#A6D9F7;
+    color:black
   }
   .carta-recurso-item img{
     width: 64px;
     height: 64px;
+  }
+   /*RODAPÉ*//*RODAPÉ*//*RODAPÉ*/
+
+   footer{
+    width: 100%;
+    height: 250px;
+   }
+
+   footer .main{
+    width: 100%;
+    height: 200px;
+    background-color:#4F518C;
+    padding: 20px 10px;
+   }
+
+   .footer-links{
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 147px;
+    justify-content: space-between;
+    margin-top: 30px;
+   }
+   .footer-empresas, .footer-rental, .footer-contato,.footer-social{
+    color: white;
+    height: 100%;
+    min-height: 100px;
+
+   }
+   .footer-links h4{
+    margin-bottom: 10px;
+   }
+   .footer-links h6{
+    margin-bottom: 8px;
+   }
+   .main,.footer-social img{
+    width: 32px;
+    height: 32px;
+   }
+   .icones-social{
+    display: flex;
+    justify-content: space-around;
+  }
+   footer .ultima {
+    width: 100%;
+    height: 50px;
+    background: #2C2A4A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-contato > a{
+    color: white;
+    text-decoration: none;
   }
