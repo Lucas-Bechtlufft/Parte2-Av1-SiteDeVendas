@@ -22,6 +22,7 @@ html, body{
   }
   #titulo{
     text-align: center;
+    font-family: Consolas;
   }
 /*BOTÃO DE BUSCA*//*BOTÃO DE BUSCA*//*BOTÃO DE BUSCA*/
 #divBusca{
@@ -76,12 +77,34 @@ div ul button:hover {
   background: white;
   color: black;
 }
+
+/*TABELA*//*TABELA*//*TABELA*/
+nav h2{
+  font-size: 43px;
+  padding-top: 15px;
+  border-bottom: #1A3580 6px solid
+}
+nav ul li:hover{
+  transition: background, color 0.6s;
+  background-color:darkgrey;
+  color: black;
+}
+nav ul li{
+  border-bottom: solid;
+  font-size: 30px;
+  padding: 10px;
+}
+ul li a{
+  color: blue ;
+  text-decoration: none;
+}
+
 /*CATALOGO*//*CATALOGO*//*CATALOGO*/
 h2{
   border-bottom: #1A3580 2px solid;
 }
 .promocao{
- margin-left: 250px; 
+ margin-left: 200px; 
 }
   
 .Titulo-Catalogo {
